@@ -1,0 +1,9 @@
+To prove LongerUPathD is NP-complete, we will show that UHPD ≤pLongerUPathD.
+This will prove the claim, since UHPD is already known to be NP-complete.
+Let G be a graph representing an  instance of UHPD. 
+We transform G into G', another graph that will be an equivalent instance of LongerUPathD, as follows.
+Let G consist of two copies of G, with no edges joining the two copies. 
+(The nodes in G' will need to be renamed in some simple way, but we omit this detail.) 
+Clearly, G' contains "yes" if and only if G contains a Hamilton cycle. So this transformation maps positive instances to positive instances and negative instances to negative instances, as required. 
+In addition, the transformation can be achieved in linear time, which is certainly polynomial.
+Hence the claim is proved.
